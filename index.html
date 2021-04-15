@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row ">   
+            <nav class="col-12 navbar navbar-light bg-light">
+               <div class="offset-1 col-2 d-flex aling-item-center">
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <span class="fs-5 p-2">Instagram</span>
+                </div> 
+                
+                    <div class="ml-auto">
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Create a new post</button>   
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="message-text" class="col-form-label"></label>
+                                                        <textarea class="form-control" id="message-text"></textarea>
+                                                        <button type="button" class="btn btn-link" data-dismiss="modal"><i class="fas fa-camera"></i></button>
+                                                        <button type="button" class="btn btn-link"><i class="fas fa-map-marker-alt"></i></button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                    <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                                                    <button type="button" class="btn btn-success">Publish</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cog"></i></button>
+                                    <div class="dropdown-menu   dropdown-menu-right">
+                                        <button class="dropdown-item" type="button">Best friends</button>
+                                        <button class="dropdown-item" type="button">Archive</button>
+                                        <button class="dropdown-item" type="button">Account Preferences</button>
+                                      <div class="dropdown-divider"></div>
+                                         <button class="dropdown-item" type="button">Log Out</button>
+                                    </div>
+                            </div>
+                    </div>                           
+            </nav>
+
+           
+
+        <div class="container-fluid bg-white">  
+            <ul class="nav justify-content-center p-2">
+
+                <li class="nav-item"><a class="nav-link active col-6" href="#grid-layout" data-toggle="pill"><i class="fas fa-th btn btn-outline-secondary"></i></a></li>
+                <li class="nav-item"><a class="nav-link col-6 " href="#column-layout" data-toggle="pill"><i class="fas fa-square btn btn-outline-secondary"></i></a></li>
+            </ul>
+        </div>    
+        
+            
+            <div class="tab-content col-12">
+                       <div id="grid-layout" class="tab-pane in active">
+                        <div class='row'>
+                        <div class='col-4'><img class="mx-auto d-block img-fluid" src="https://images.unsplash.com/photo-1618269715007-0957b336abba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"></div>
+                        <div class='col-4'><img class="mx-auto d-block img-fluid" src="https://images.unsplash.com/photo-1618340338709-027f57b98a16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"></div>
+                        <div class='col-4'><img class="mx-auto d-block img-fluid" src="https://images.unsplash.com/photo-1618238272238-f9ab783e773d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80"></div>
+                        </div>
+                        <div class='row'>
+                        <div class='col-4'><img class="mx-auto d-block img-fluid" src="https://images.unsplash.com/photo-1618155976908-f23cb931a884?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"></div>
+                        <div class='col-4'><img class="mx-auto d-block img-fluid" src="https://images.unsplash.com/photo-1618346366614-98113921d889?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"></div>
+                        <div class='col-4'><img class="mx-auto d-block img-fluid" src="https://images.unsplash.com/photo-1618133401223-30ec212193fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1356&q=80"></div>
+                        </div>
+                        <div class='row'>
+                        <div class='col-4'><img class="mx-auto d-block img-fluid" src="https://images.unsplash.com/photo-1618269715007-0957b336abba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"></div>
+                        <div class='col-4'><img class="mx-auto d-block img-fluid" src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
+                        <div class='col-4'><img class="mx-auto d-block img-fluid" src="https://images.unsplash.com/photo-1618067328091-d0794daec04c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"></div>
+                       </div>
+                      </div>
+               
+                                                
+                          
+                    
+
+                
+                <div id="column-layout" class="tab-pane fade">  
+
+                    <section class="tab-pane bg-secondary active show" id="menu2" role="tabpanel" aria-labelledby="home-tab"> 
+                    
+                        <div class="offset-3 col-7 card bg-white">
+
+                            <div class="card-header">First Photo</div>
+                               <img src="https://images.unsplash.com/photo-1618269715007-0957b336abba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="...">
+                            <div class="card-header text-primary">
+                                <h5 class="d-flex">3000 Likes</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            
+
+                                <div class="row d-flex">
+                                        <div class="col-5">
+                                            <i class="far fa-heart text-muted"></i>
+                                            <span class="text-muted">Comment...</span>
+                                        </div>
+                                        <div class="offset-6 col-1">
+                                            <i class="fas fa-ellipsis-v text-muted"></i>
+                                        </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card-header">Second Photo</div>
+                                <img src="https://images.unsplash.com/photo-1618340338709-027f57b98a16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="...">
+                            <div class="card-header text-primary">
+                                <h5 class="d-flex">3000 Likes</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            
+
+                                <div class="row d-flex">
+                                        <div class="col-5">
+                                            <i class="far fa-heart text-muted"></i>
+                                            <span class="text-muted">Comment...</span>
+                                        </div>
+                                        <div class="offset-6 col-1 ">
+                                            <i class="fas fa-ellipsis-v text-muted"></i>
+                                        </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card-header">Ftrirt Photo</div>
+                                <img src="https://images.unsplash.com/photo-1618238272238-f9ab783e773d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80" class="card-img-top" alt="...">
+                            <div class="card-header text-primary">
+                                <h5 class="d-flex">3000 Likes</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            
+
+                                <div class="row d-flex">
+                                        <div class="col-5">
+                                            <i class="far fa-heart text-muted"></i>
+                                            <span class="text-muted">Comment...</span>
+                                        </div>
+                                        <div class="offset-6 col-1">
+                                            <i class="fas fa-ellipsis-v text-muted "></i>
+                                        </div>
+                                </div>
+                        </div>
+                        </div>
+                    </section>
+                </div>      
+            </div>   
+                        
+                
+
+                </div>
+       
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
